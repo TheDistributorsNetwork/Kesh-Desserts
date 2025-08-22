@@ -1,62 +1,97 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sweet Delights</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Golden Desserts</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #000;
+      color: #FFD700;
+      text-align: center;
+    }
+
+    h1, h2, h3, p {
+      background: linear-gradient(90deg, #FFD700, #FFA500, #FFD700);
+      background-size: 200% auto;
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+      animation: shine 3s linear infinite;
+    }
+
+    @keyframes shine {
+      to {
+        background-position: 200% center;
+      }
+    }
+
+    header {
+      padding: 50px 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    nav {
+      margin-top: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #FFD700;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #FFA500;
+    }
+
+    section {
+      padding: 60px 20px;
+    }
+
+    footer {
+      background: #111;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
   <header>
+    <h1>Golden Desserts</h1>
     <nav>
-      <div class="logo">Sweet Delights</div>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <a href="#about">About</a>
+      <a href="#menu">Menu</a>
+      <a href="#contact">Contact</a>
     </nav>
-    <div class="hero">
-      <h1>Indulge in Sweet Delights</h1>
-      <p>Delicious desserts made with love</p>
-    </div>
   </header>
 
   <section id="about">
     <h2>About Us</h2>
-    <p>At Sweet Delights, we craft desserts that bring joy to every occasion. From cakes to pastries, every bite is a celebration of flavor.</p>
+    <p>Welcome to Golden Desserts, where indulgence meets elegance. Every dessert is crafted with passion and luxury, perfect for every occasion.</p>
   </section>
 
   <section id="menu">
     <h2>Our Menu</h2>
-    <div class="gallery">
-      <div class="card">
-        <img src="images/cake.jpg" alt="Cake">
-        <h3>Chocolate Cake</h3>
-        <p>Rich and moist with layers of chocolate frosting.</p>
-      </div>
-      <div class="card">
-        <img src="images/macaron.jpg" alt="Macaron">
-        <h3>French Macarons</h3>
-        <p>Colorful and delicate, filled with creamy ganache.</p>
-      </div>
-      <div class="card">
-        <img src="images/cheesecake.jpg" alt="Cheesecake">
-        <h3>Cheesecake</h3>
-        <p>Creamy and smooth with a buttery biscuit base.</p>
-      </div>
-    </div>
+    <p>🍰 Cakes • 🥐 Pastries • 🍩 Donuts • 🍫 Chocolates</p>
   </section>
 
   <section id="contact">
     <h2>Contact Us</h2>
-    <p>Email: hello@sweetdelights.com</p>
-    <p>Phone: +27 12 345 6789</p>
+    <p>Email: goldendesserts@example.com</p>
+    <p>Phone: +27 123 456 789</p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Sweet Delights. All Rights Reserved.</p>
+    <p>© 2025 Golden Desserts | All Rights Reserved</p>
   </footer>
 </body>
 </html>
